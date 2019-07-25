@@ -1,3 +1,17 @@
 .supply-chart {
-  
+  text-align: center;
+  height: 500px;
+  .supply-chart__status {
+    font-weight: bold;
+    float: left;
+  }
+  .supply-chart__status--good {
+    color: green;
+  }
+  .supply-chart__status--moderate {
+    color: orange;
+  }
+  .supply-chart__status--low {
+    color: red;
+  }
 }
