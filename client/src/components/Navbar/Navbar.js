@@ -16,7 +16,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div style={{ width: 280 }}>
+      <div>
         <Menu
           className="navbar"
           defaultSelectedKeys={['1']}
@@ -25,25 +25,35 @@ class Navbar extends React.Component {
           theme="light"
           inlineCollapsed={this.state.collapsed}>
           <Menu.Item key="1">
-            <Icon type="edit" />
-            <a href="#supply-chart-1">Pencils</a>
+            <a href="#supply-chart-1">
+              <Icon type="edit" />
+              Pencils
+            </a>
           </Menu.Item>
-          <Menu.Item key="2">
-            <Icon type="scissor" />
-            Scissors
+          <Menu.Item key="2" disabled>
+            <a href="#supply-chart-2">
+              <Icon type="scissor" />
+              Scissors
+            </a>
           </Menu.Item>
-          <Menu.Item key="3">
-            <Icon type="delete" />
-            Trash Cans
+          <Menu.Item key="3" disabled>
+            <a href="#supply-chart-3">
+              <Icon type="pushpin" />
+              Thumbtacks
+            </a>
           </Menu.Item>
-          <Menu.Item key="4">
-            <Icon type="pushpin" />
-            Pushpins
+          {/* <Menu.Item key="4">
+            <a href="#supply-chart-4">
+              <Icon type="pushpin" />
+              Thumbtacks
+            </a>
           </Menu.Item>
           <Menu.Item key="5">
-            <Icon type="usb" />
-            USB Drives
-          </Menu.Item>
+            <a href="#supply-chart-5">
+              <Icon type="usb" />
+              USB Drives
+            </a>
+          </Menu.Item> */}
         </Menu>
       </div>
     );
